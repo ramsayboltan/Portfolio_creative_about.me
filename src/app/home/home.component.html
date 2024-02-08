@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <!-- About me  -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About me</h2>
+                <img src="../../assets/Screenshot 2024-02-03 230425.png" alt="profile picture" width="256"  height="256" class="rounded-circle">
+                <p>A full-stack enthusiast with expertise in MERN (MongoDB, Express.js, React, Node.js) - crafting seamless, scalable, and dynamic web solutions that transcend expectations.</p>
+            </div>
+        </div>
+        <!-- featured Project  -->
+        <div class="col-lg shadow border  m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuresProject.name}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let picture of featuresProject.pictures">
+                <slide>
+                  <img
+                    src={{picture}}
+                    alt="slide"
+                    style="display: block; width: 100%"
+                  >
+                </slide>
+            </div>
+            </carousel> 
+            <p class="mt-2">{{featuresProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion  [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperenceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95px;">
+                        <div  *ngIf="!isWorkExperenceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperenceOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+
+            <div style="text-align: left;">
+            <h2  class="mb-0">
+             Software Engineer
+            </h2>
+        <h3 class="text-primary">meander Software</h3>
+        <ul>
+            <li>Meander Software: Crafting digital journeys with precision and creativity.</li>
+               <li> At Meander, we redefine possibilities, transforming ideas into seamless solutions.</li>
+               <li> Our team of experts navigates the digital landscape, delivering innovative software experiences.</li>
+               <li>Experience the difference with Meander Software – where every project is a personalized voyage.</li>
+               <li> Elevate your business with Meander: Where innovation meets implementation.</li>
+        </ul>
+    </div>
+            </accordion-group>
+            <accordion-group  [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px;">
+                        <div  *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+            <div style="text-align: left;">
+            <h2 class="mb-0">Bachelor's of computer Application</h2>
+           <h3  class="text-primary">L.P.U  University</h3>
+           <ul>
+            <li> I am pursuing  B.C.A in L.P.U University</li>
+            <li>At LPU, we embrace diversity, nurturing a global community of learners.</li>
+        </ul>
+        </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificateOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certificate</div>
+                    <div style="width: 10.95px;">
+                        <div  *ngIf="!isCertificateOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificateOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h3>Mern stack in meander Software private limited</h3>
+                <ul>
+                    <li> obtained January(2024)</li>
+                    <li>#2521554254</li>
+                </ul>
+            </div>
+    
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">skills</div>
+                    <div style="width: 10.95px;">
+                        <div  *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+                    
+                </button>                
+    <div class="row" style="text-align:left;">
+    <div class="col">
+        <h3>Programming Languages:</h3>
+        <ul>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>c</li>
+            <li>c++</li>
+    
+        </ul>
+    </div>
+    <div class="col">
+        <h3>Frameworks:</h3>
+        <ul>
+            <li>Nodejs</li>
+            <li>Angular</li>
+            <li>React</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h3>Other skills:</h3>
+        <ul>
+            <li>GitHub</li>
+            <li>Mongodb</li>
+        </ul>
+    </div>
+    </div>       
+     </accordion-group>
+        </accordion>
+    </div>
+    </div>
+   
